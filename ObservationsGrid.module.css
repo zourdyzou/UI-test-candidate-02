@@ -1,0 +1,44 @@
+.grid {
+    flex: 1;
+    min-height: 240px;
+    width: 100%;
+}
+.grid :global(.ag-cell).editable,
+.editable {
+    background-color: #eff6ff;
+    color: #1e3a5f;
+}
+.grid :global(.ag-cell).modified,
+.modified {
+    background-color: #fff3cd;
+    color: #664d03;
+    box-shadow: inset 3px 0 #b7791f;
+    font-weight: 600;
+}
+.grid :global(.ag-cell).locked,
+.locked {
+    background-color: #edf0f3;
+    color: #59636e;
+    cursor: not-allowed;
+    font-style: italic;
+}
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px;
+    font-size: 0.8125rem;
+}
+.legend li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.swatch {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #9aa5b1;
+    border-radius: 3px;
+}
